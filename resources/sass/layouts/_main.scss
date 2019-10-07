@@ -1,0 +1,28 @@
+html,
+body {
+  background-color: $dark-gray !important;
+  overflow-x: hidden;
+}
+
+.app-body {
+  background: $dark-gray;
+}
+
+.app-content {
+  background-color: $dark-gray;
+  padding: 20px 50px;
+  position: relative;
+}
+
+.app-content.sidebar {
+  width: calc(100vw - #{$sidebar-width});
+  position: absolute;
+  left: 220px;
+}
+
+
+@include media-breakpoint-down(md) {
+  .app-content {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,102 @@
+.story-bookend {
+  &_share-providers {
+    padding: 0;
+    margin: 0;
+    display: block;
+    li {
+      display: inline-block;
+      padding-right: 12px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .md-checkbox {
+        margin: 0;
+        top: 5px;
+        left: 3px;
+      }
+    }
+  }
+
+  &_components {
+    display: block;
+    &.flex {
+      display: flex;
+    }
+
+    ul.available-components {
+      flex: 1;
+      padding-left: 20px;
+      margin: 0;
+      li {
+        list-style: none;
+        display: flex;
+        margin: 5px 0;
+      }
+    }
+
+    .components {
+      position: relative;
+      &:before {
+        border-right: 3px dotted gray;
+        bottom: 0;
+        content: "";
+        display: block;
+        left: 18px;
+        position: absolute;
+        width: 5px;
+        z-index: -1;
+        top: 20px;
+      }
+    }
+
+    .story-bookend_component {
+      display: flex;
+      .md-field {
+        margin-bottom: 0;
+      }
+      textarea {
+        resize: none !important;
+      }
+    }
+
+    .btn-add-component {
+      height: 40px !important;
+      width: 40px !important;
+      margin: 0;
+    }
+
+    .component-icon {
+      width: 40px;
+      height: 40px;
+      background: $dark-gray;
+      border-radius: 50%;
+      margin-right: 10px;
+      padding: 5px;
+    }
+
+    .component-name {
+      padding: 10px;
+      background: $dark-gray;
+      border-radius: 5px;
+    }
+
+    .component-content {
+      flex: 4;
+      padding-left: 20px;
+    }
+
+    .component-tools {
+      flex: 1;
+      text-align: right;
+      cursor: pointer;
+      i:hover {
+        color: $green;
+      }
+    }
+
+  }
+
+}

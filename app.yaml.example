@@ -1,0 +1,35 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+
+# Ensure we skip ".env", which is only for local development
+skip_files:
+  - .env
+
+env_variables:
+  # Put production environment variables here.
+  APP_DEBUG: true
+  APP_LOG: errorlog
+  APP_KEY: laravel_app_key
+  STORAGE_DIR: /tmp
+  CACHE_DRIVER: database
+  SESSION_DRIVER: database
+  DB_HOST: localhost
+  DB_DATABASE: db_name
+  DB_USERNAME: db_user
+  DB_PASSWORD: db_pass
+  DB_SOCKET: /cloudsql/projet:region:cloudsql-instance
+  CLOUDINARY_CLOUD_NAME: cloudinary_cloud_name
+  CLOUDINARY_API_KEY: cloudinary_api_key
+  CLOUDINARY_API_SECRET: cloudinary_api_secret
+  CLOUDINARY_USER_NAME: cloudinary_user_name
+  ADMIN_NAME: admin_name
+  ADMIN_EMAIL: admin_email
+  ADMIN_PASSWORD: admin_pass
+
+beta_settings:
+    # for Cloud SQL, set this value to the Cloud SQL connection name,
+    # e.g. "project:region:cloudsql-instance"
+    cloud_sql_instances: "project:region:cloudsql-instance"

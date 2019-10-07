@@ -1,0 +1,166 @@
+.story-left-sidebar {
+  background: $light-gray;
+  border-top: 1px solid $light-black;
+  height: calc(100vh - #{$header-height + $toolbar-height});
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: $amp-sidebar-width;
+  z-index: 1;
+
+  .header {
+    padding: 10px 0;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .btn-more {
+      float: right;
+      cursor: pointer;
+    }
+
+    .page-tools {
+      background: white;
+      margin-top: 10px;
+      position: absolute;
+      padding: 10px;
+      right: 10px;
+      z-index: 100;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $light-gray;
+        }
+      }
+    }
+  }
+
+  .template-list {
+    margin-top: 20px;
+    margin-left: 19px;
+    max-height: calc(100vh - #{$header-height + $toolbar-height + 160px});
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .page-layer {
+      position: relative;
+
+      &::before {
+        border-right: 3px dotted gray;
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 4px;
+        position: absolute;
+        top: 0;
+        width: 5px;
+        z-index: -1;
+      }
+
+      .layer-template {
+        padding-right: 10px;
+        cursor: pointer;
+        background: $light-gray;
+
+        &.selected, &:hover {
+          .btn-tools {
+            display: block;
+            margin-top: 8px;
+          }
+        }
+
+        &.selected {
+          background-color: $light-purple;
+        }
+        &:hover {
+          background-color: $dark-gray;
+        }
+
+        img.layer-template_icon {
+          width: 15px;
+        }
+
+        &_name {
+          display: inline-block;
+          margin-left: 20px;
+          padding: 10px 0;
+        }
+      }
+
+      .layer-elements {
+        font-size: 13px;
+        margin-left: 60px;
+
+        .element-grid-area {
+          cursor: pointer;
+          padding: 10px;
+
+          &.selected, &:hover {
+            .btn-tools {
+              display: block;
+            }
+          }
+          &.selected {
+            background-color: $light-purple;
+          }
+          &:hover {
+            background-color: $dark-gray;
+          }
+        }
+
+        .element {
+          cursor: pointer;
+          margin-left: 10px;
+
+          &-type {
+            padding: 10px;
+            cursor: pointer;
+
+            &.selected, &:hover {
+              .btn-tools {
+                display: block;
+              }
+            }
+            &.selected {
+              background-color: $light-purple;
+            }
+            &:hover {
+              background-color: $dark-gray;
+            }
+
+            span.element-type_label {
+              min-width: 70px;
+              display: inline-block;
+              text-align: center;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn-add-layer {
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .btn-tools {
+    float: right;
+    display: none;
+    cursor: pointer;
+    i:hover{
+      color: $green;
+    }
+  }
+}

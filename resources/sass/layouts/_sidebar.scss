@@ -1,0 +1,20 @@
+.app-sidebar {
+  position: absolute;
+  left: 0;
+  margin-top: 50px;
+  width: $sidebar-width;
+  padding-left: 20px;
+
+  .md-list {
+    background: none !important;
+  }
+
+  .md-list-item {
+    cursor: pointer;
+  }
+
+  .border-list-item {
+    border-bottom: 1px solid #959595;
+    border-top: 1px solid #959595;
+  }
+}

@@ -1,0 +1,24 @@
+@import "story/left-sidebar";
+@import "story/right-sidebar";
+@import "story/bookend";
+@import "story/layer-templates-list";
+
+.story {
+
+  &-slide_view {
+    height: calc(100vh - #{$header-height});
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &-page_view {
+    background: $light-gray;
+    height: $amp-height;
+    margin: 0 auto;
+    width: $amp-width;
+  }
+}
+
+

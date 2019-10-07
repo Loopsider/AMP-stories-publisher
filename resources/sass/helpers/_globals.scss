@@ -1,0 +1,85 @@
+.btn-poss-new-item {
+  position: fixed !important;
+  right: 25px !important;
+  bottom: 25px !important;
+}
+
+.label-poss-btn {
+  line-height: 48px;
+}
+
+.md-icon:after {
+  background: transparent !important;
+}
+
+iframe {
+  height: 100% !important;
+}
+
+md-tabs.md-no-animation md-tab-content {
+  transition: none !important;
+}
+
+md-tabs.md-no-animation md-ink-bar {
+  transition: none !important;
+}
+
+.md-dialog-container {
+  min-width: 500px !important;
+}
+
+.md-empty-state-label {
+  color: gray;
+}
+
+.attachment-image {
+  height: 100px !important;
+  width: auto !important;
+}
+
+.table-responsive {
+  background-color: white;
+  tr {
+    line-height: 30px;
+  }
+  td, th {
+    padding: 0.3rem 1rem;
+  }
+  .table-actions span {
+    cursor: pointer;
+  }
+}
+
+.blockUI h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.ck-editor {
+  width: 100% !important;
+}
+
+.code-editor {
+  display: flex;
+  overflow: auto;
+  font-size: 14px;
+  font-family: monospace;
+  &_index{
+    background: #222;
+    width: 30px;
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  textarea {
+    background: black;
+    border: none;
+    color: white;
+    min-height: 300px;
+    outline: none;
+    overflow: hidden;
+    width: 100%;
+    resize: none;
+  }
+}

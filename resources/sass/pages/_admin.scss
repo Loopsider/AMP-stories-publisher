@@ -1,0 +1,24 @@
+.story-management {
+  .rich-text-styles {
+    .style {
+      display: flex;
+      .md-field {
+        margin-right: 10px;
+      }
+      .md-field:nth-child(1) {
+        flex: 5;
+      }
+      .md-field:nth-child(2) {
+        flex: 5;
+      }
+      .md-field:nth-child(3) {
+        flex: 12;
+      }
+      span.remove-style {
+        flex: 1;
+        margin-top: 28px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "description": "description",
+    "notification": "notification",
+    "accept": "accept",
+    "menu": "Menu",
+    "close": "Close",
+    "category_one": "category 1",
+    "category_two": "category 2",
+    "category_three": "category 3",
+    "videos": "Videos",
+    "stories": "Stories"
+}

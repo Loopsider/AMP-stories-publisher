@@ -1,0 +1,5 @@
+.dashboard-table {
+    max-height: calc(100vh - #{$dashboard-table-height-gap});
+    overflow: hidden;
+    overflow-y: auto;
+}

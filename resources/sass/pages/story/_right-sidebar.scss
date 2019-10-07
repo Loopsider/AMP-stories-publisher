@@ -1,0 +1,17 @@
+.story-right-sidebar {
+  background: $light-gray;
+  border-top: 1px solid $light-black;
+  height: calc(100vh - #{$header-height + $toolbar-height});
+  right: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: $amp-sidebar-width;
+  z-index: 1;
+
+  .md-content {
+    height: calc(100vh - #{$header-height + $toolbar-height} - 120px) !important;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,121 @@
+.app-header {
+  background-color: $light-gray;
+  border-bottom: 1px solid #8a8a8a;
+  height: $header-height;
+
+  .navbar-brand {
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .app-dropdown-account {
+    .md-avatar-icon {
+      background-color: $light-blue !important;
+    }
+  }
+
+  .editable-header-title {
+    flex: 5;
+    input {
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      outline: none;
+      padding: 5px;
+      max-width: 800px;
+      min-width: 200px;
+      &:focus {
+        border: 1px solid $light-blue;
+      }
+    }
+  }
+
+  .editable-tools {
+    flex: 5;
+    text-align: right;
+    .icon-group {
+      i {
+        height: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute !important;
+  }
+}
+
+.app-filter {
+  background: $light-gray;
+  padding-bottom: 3px;
+  display: flex;
+  height: $toolbar-height;
+  margin-left: calc(50px + #{$sidebar-width});
+
+  .tab-navigation {
+    flex: 2;
+  }
+
+  .tool-box {
+    flex: 2;
+    display: flex;
+  }
+
+  .search {
+    flex: 4;
+    .md-icon:after {
+      background: none !important;
+    }
+  }
+}
+
+.app-toolbar {
+  align-items: center;
+  background: $light-gray;
+  display: flex;
+  height: $toolbar-height;
+  padding: 0 20px;
+
+  .page-indexes {
+    width: 330px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    .md-button {
+      min-width: 30px;
+      font-weight: bold;
+      height: 30px;
+      margin: 0 7px;
+    }
+    .md-ripple {
+      padding: 0 8px;
+    }
+  }
+  .page-tools {
+    flex: 1;
+    li:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.54);
+      padding-right: 20px;
+    }
+    li {
+      padding-left: 20px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      cursor: pointer;
+    }
+    li:hover {
+      color: $light-blue;
+    }
+  }
+}
